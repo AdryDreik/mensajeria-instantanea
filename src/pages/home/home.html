@@ -8,5 +8,8 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="gotToConversation()">ir a conversaciones</button>
+  <!-- <button ion-button (click)="gotToConversation()">ir a conversaciones</button> -->
+  <p *ngFor="let elem of Users">
+    {{elem.nick}}
+  </p>
 </ion-content>
